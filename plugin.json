@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ui-design",
+  "version": "0.1.0",
+  "description": "Design frontend specifications, editable prototypes, scoped image assets and evidence-backed previews using model-native capabilities.",
+  "author": {
+    "name": "Full Stack Skills / PartMe.AI"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "frontend",
+    "design",
+    "imagegen",
+    "agent-skills"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "UI Design",
+        "shortDescription": "Model-native frontend design and image assets",
+        "longDescription": "Design frontend specifications, editable prototypes, scoped image assets and evidence-backed previews using model-native capabilities.",
+        "developerName": "Full Stack Skills / PartMe.AI",
+        "category": "Creativity",
+        "capabilities": [
+          "Interactive",
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Design a responsive frontend with an existing theme",
+          "Continue the next page using my approved baseline"
+        ]
+      }
+    }
+  }
+}
