@@ -1,6 +1,6 @@
 # UI Design
 
-基于宿主大模型的前端设计插件，覆盖规格、功能与导航合同、界面连续性、可编辑原型、可选生图、预览和审查。英文显示名称统一为 **UI Design**。`ui-design` 0.1.0 源码仓库：[ui-design-plugin](https://github.com/full-stack-plugins/ui-design-plugin)。版本 Release 与客户端安装验收另行进行，本插件由社区维护。
+基于宿主大模型的前端设计插件，覆盖规格、功能与导航合同、界面连续性、可编辑原型、可选生图、预览和审查。英文显示名称统一为 **UI Design**。`ui-design` 0.1.1 源码仓库：[ui-design-plugin](https://github.com/full-stack-plugins/ui-design-plugin)。固定版本 v0.1.1 通过 Full Stack 插件市场分发，客户端安装验收另行进行，本插件由社区维护。
 
 [English](README.md) | 简体中文 · [设计方案](docs/ui-design-plugin-design.md) · [验收合同](docs/implementation-spec.md)
 
@@ -18,13 +18,13 @@ flowchart LR
     E --> H[持续任务复用既有 Harness]
 ```
 
-包含用户指定的 9 个设计技能、新增 ui-design-to-image 和插件入口 ui-design-use，共 **11 个技能**。完整资源与原有 Python Harness 随包分发，skills.lock.json 记录来源与文件哈希。来源固定为已在上游核实的提交 dc963c182b7f82d2ee7abe63d0fa6cb29aeef138，包含规格更新与新增生图技能；不宣称已有发布 tag，缺失的独立许可证由来源根 LICENSE 补齐。
+分发 **11 个技能**，包括入口 ui-design-use，全部在 [design-skills](https://github.com/full-stack-skills/design-skills/tree/v1.15.1) 维护。来源 v1.15.1 固定于 13d8e347002d4be3bb6a5b6415df64fc0a4d52db，完整技能摘要记录在 skills.lock.json；插件不维护技能例外。
 
 普通设计不需要 MCP 或外部设计平台。需要图片且原生 imagegen 可用时，默认使用宿主能力；baoyu-image-gen 是用户明确选择后才使用的可选已安装后端，不分发其实现或 Codex 系统技能。插件加载不会生成图片、设置凭据、安装依赖或运行提示 hooks。
 
 ## 使用与配置
 
-根 plugin.json 遵守 Agent Plugins 1.0.0，skills/ 为固定技能发现目录。本插件不提供 MCP 服务，因此无需 mcp.json。包含 Codex/Claude 兼容清单，具体客户端安装加载须单独验证；本轮没有推送发布或修改已安装缓存。
+根 plugin.json 遵守 Agent Plugins 1.0.0，skills/ 为固定技能发现目录。本插件不提供 MCP 服务，因此无需 mcp.json。包含 Codex/Claude/ZCode/Kimi 兼容清单，具体客户端安装加载须单独验证；源码与固定版本托管于 GitHub，不修改已安装缓存。
 
 通过客户端支持的本地加载流程使用可信插件包，然后调用 ui-design-use 或指定专业技能。例如：“根据当前项目已有主题设计一个可编辑的响应式账户页面。”静态效果图不能证明可编辑控件或实际运行。
 
@@ -59,4 +59,16 @@ python scripts/package_plugin.py
 
 实际结果见[验证记录](docs/verification.md)。结构通过不证明客户端安装、生图模型质量或已部署前端。本轮未为打包调用真实生图；可选视觉导出工具需要各自已有依赖。包内不保存 API 密钥。
 
-先修改技能源，再明确刷新快照哈希。不可变技能源版本、托管插件发布、市场添加与用户客户端安装测试属于独立发布工作。许可证为 [Apache-2.0](LICENSE)，见[来源说明](THIRD-PARTY-NOTICES.md)。
+先修改技能源，再明确刷新快照哈希。技能源 Release、插件 Release 与市场固定版本共同标识分发内容；用户客户端安装验收仍单独记录。许可证为 [Apache-2.0](LICENSE)，见[来源说明](THIRD-PARTY-NOTICES.md)。
+
+## 安装与技能源维护
+
+通过客户端市场界面添加 `partme-ai/full-stack-plugins`，再选择 **UI Design**；安装来源固定为 `v0.1.1`。普通设计无需 MCP 连接。
+
+技能内容只在 `design-skills` 修改。先发布技能源版本，再更新固定来源并执行：
+
+```bash
+python scripts/vendor/skill_vendor.py update
+python scripts/vendor/skill_vendor.py check
+python scripts/check_snapshot.py
+```

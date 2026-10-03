@@ -16,7 +16,7 @@
 
 - 新插件是 Greenfield，现已形成本地分发包；验收事实源为 implementation-spec.md。本轮不执行 specify/openspec init，不创建或切换分支。
 - design-skills 是 Brownfield，已有 OpenSpec 与 Superpowers 文档，并存在 ui-design-spec 未提交修改；使用当前工作树作为设计输入，保留这些修改。
-- 参考 Stitch 插件的技能来源锁、插件本地技能、宿主清单、证据审查与发布链；不复制其远程代理、Token UI、Stitch 工具调用和平台资源模型。
+- 参考 Stitch 插件的技能来源锁、来源技能分发、宿主清单、证据审查与发布链；不复制其远程代理、Token UI、Stitch 工具调用和平台资源模型。
 - 9 个现有 UI 技能与新增 ui-design-to-image 的事实源建议统一放 design-skills。插件发布时只分发已批准、不可变版本的快照。
 - Codex imagegen 是宿主能力，不作为可复制的系统技能发布。baoyu-image-gen 是独立可选后端；实际调用读取所安装版本的设置、脚本与能力，不复制 SDK 实现。
 
@@ -34,9 +34,9 @@
 | ui-design-preview | design-skills | 已有原型的场景/主题/设备对照，不重新制作页面 |
 | ui-design-review | design-skills | 机械、语义和视觉审查；不替代用户批准 |
 | ui-design-harness | design-skills | 运行发现、dispatch、证据、恢复、纠偏与提升 |
-| ui-design-use | 已实现的插件本地技能 | 用户入口、能力探测及输出路由；不保存另一份任务状态 |
+| ui-design-use | 已实现的来源技能分发 | 用户入口、能力探测及输出路由；不保存另一份任务状态 |
 
-设计包含 10 个来源技能和 1 个建议的插件本地入口，共 11 个默认技能。baoyu 不计入默认必需集合：宿主已安装则按授权使用；发布阶段若决定随包分发，须锁定来源、审查许可证并单独登记，不能宣称当前已包含。
+全部 11 个默认技能在 design-skills 维护，包括 ui-design-use 入口；插件只分发固定版本快照。baoyu 不计入默认必需集合：宿主已安装则按授权使用；发布阶段若决定随包分发，须锁定来源、审查许可证并单独登记，不能宣称当前已包含。
 
 ## 4. 架构
 
@@ -158,9 +158,9 @@ flowchart LR
 ui-design-plugin/
   plugin.json                         portable manifest
   skills/                             10 locked design-skills snapshots
-    ui-design-use/                    plugin-local entry
+    ui-design-use/                    source-managed entry
   skills.lock.json                    real immutable refs/SHAs/digests
-  plugin-local-skills.json             local entry whitelist
+  plugin-local-skills.json             empty local exception inventory
   .agents/plugins/marketplace.json     repository marketplace
   .codex-plugin/plugin.json            native compatibility manifest
   .zcode-plugin/plugin.json
@@ -217,4 +217,4 @@ ui-design-plugin/
 
 已完成：9 个输入技能与 Stitch 分发/职责对照；新增 ui-design-to-image 的后端路由、图像合同、提示模板与英文元数据；ui-design-use、标准/原生兼容清单、完整资源与按文件校验的来源快照、绝对项目 store 入口、CI 配置和打包脚本。入口 3 项及 Harness 128 项回归通过；内置预览例在实际浏览器验证通过。
 
-独立后续发布阶段：不可变源版本、托管仓库/Release、市场登记和用户客户端安装验收。正式 SDD 初始化未执行，本插件不需要 MCP；真实生图后端仅在实际图片请求中运行。本轮没有生成图片，不消耗生图配额；现有截图仅为真实前端示例的浏览器渲染证据。
+来源和分发采用固定版本 Release，并在市场登记；用户客户端安装验收单独记录。正式 SDD 初始化未执行，本插件不需要 MCP；真实生图后端仅在实际图片请求中运行。本轮没有生成图片，不消耗生图配额；现有截图仅为真实前端示例的浏览器渲染证据。

@@ -1,10 +1,13 @@
 {
   "name": "ui-design",
   "version": "0.1.1",
+  "displayName": "UI Design",
   "description": "Design frontend specifications, editable prototypes, scoped image assets and evidence-backed previews using model-native capabilities.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
+  "homepage": "https://github.com/full-stack-plugins/ui-design-plugin",
+  "repository": "https://github.com/full-stack-plugins/ui-design-plugin",
   "license": "Apache-2.0",
   "keywords": [
     "frontend",
@@ -12,17 +15,5 @@
     "imagegen",
     "agent-skills"
   ],
-  "skills": [
-    "./skills/ui-design-continuity",
-    "./skills/ui-design-feature",
-    "./skills/ui-design-harness",
-    "./skills/ui-design-nav",
-    "./skills/ui-design-preview",
-    "./skills/ui-design-review",
-    "./skills/ui-design-spec",
-    "./skills/ui-design-theme",
-    "./skills/ui-design-to-image",
-    "./skills/ui-design-use",
-    "./skills/ui-design-visual"
-  ]
+  "skills": "skills"
 }

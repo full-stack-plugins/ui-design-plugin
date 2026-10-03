@@ -1,6 +1,6 @@
 # Local verification record
 
-Scope: local implementation verification, not tagged-release or installed-client acceptance. Source identity is the exact skills.lock.json snapshot at verified upstream commit dc963c182b7f82d2ee7abe63d0fa6cb29aeef138; no version tag is claimed.
+Scope: local implementation verification, not installed-client acceptance. Source identity is the exact skills.lock.json snapshot at upstream commit 13d8e347002d4be3bb6a5b6415df64fc0a4d52db; source tag v1.15.1 is published.
 
 | Check | Actual result | What it establishes |
 |---|---|---|
@@ -16,3 +16,5 @@ Scope: local implementation verification, not tagged-release or installed-client
 The browser receipt/screenshots are generated under dist/preview-evidence by verify_preview.cjs. The demo is explicitly the bundled sample, not a claimed user-specific UI delivery. Real native image generation and baoyu/API calls were not requested for this packaging validation and were not executed. Model quality, host installation and production frontend integration remain NOT VERIFIED.
 
 These local results were recorded before source publication. Current remote CI status is available in the repository's GitHub Actions page. The distributable archive is generated only after schema, link and snapshot checks. Tagged releases, marketplace addition and installing updates remain separate actions.
+
+Release v0.1.1: all skills are source-managed by design-skills v1.15.1; no plugin-local skill exception. Source-ownership and added-resource drift tests passed. Supported manifests and aggregate marketplace share version 0.1.1 and immutable installation ref v0.1.1. Actual client installation remains unverified.

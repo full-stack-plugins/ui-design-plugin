@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ui-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Design frontend specifications, editable prototypes, scoped image assets and evidence-backed previews using model-native capabilities.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
@@ -29,7 +29,9 @@
         "defaultPrompt": [
           "Design a responsive frontend with an existing theme",
           "Continue the next page using my approved baseline"
-        ]
+        ],
+        "logo": "./assets/logo.png",
+        "logoDark": "./assets/logo.png"
       }
     }
   }

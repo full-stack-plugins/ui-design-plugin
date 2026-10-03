@@ -5,6 +5,7 @@
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
+  "homepage": "https://github.com/full-stack-plugins/ui-design-plugin",
   "license": "Apache-2.0",
   "keywords": [
     "frontend",
@@ -12,7 +13,6 @@
     "imagegen",
     "agent-skills"
   ],
-  "skills": "./skills/",
   "interface": {
     "displayName": "UI Design",
     "shortDescription": "Model-native frontend design and image assets",
@@ -27,8 +27,7 @@
     "defaultPrompt": [
       "Design a responsive frontend with an existing theme",
       "Continue the next page using my approved baseline"
-    ],
-    "logo": "./assets/logo.png",
-    "logoDark": "./assets/logo.png"
-  }
+    ]
+  },
+  "skills": "./skills/"
 }
