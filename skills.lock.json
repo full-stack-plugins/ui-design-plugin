@@ -21,17 +21,17 @@
       "dest": "skills/",
       "sha": "13d8e347002d4be3bb6a5b6415df64fc0a4d52db",
       "sha256": {
-        "ui-design-continuity": "f4b589d06de56473e697ccc9ef25e4937baaf90d1b087c587576720a47507e03",
-        "ui-design-feature": "f4f69fea063e882d160d213701316d58b2209babcbe942ae505d401ded87650f",
-        "ui-design-harness": "77d80618dcb240d5a1934d8bcfb146575c410632fe8e66678cc5f3865d79c934",
-        "ui-design-nav": "2462b3f7aee6da44976a53bc024486b9a5dacad3bb93522c06fd4545f53c63bd",
-        "ui-design-preview": "c3757da267da2689b120b49b5d283ef2c19a9a9539d9f35e2e601859edfe1939",
-        "ui-design-review": "a31b76ee654150042d62df1c4286d570316e2c570fbf60bb7f8cfa62ab07dbef",
-        "ui-design-spec": "7aaa911df6c2ff915f2176a3109ca7b54316f8634939ea257b1adfcd27152682",
-        "ui-design-theme": "ce232962df9adfad5052e282c9c47fbbaa4a2dd1aaf328089c27411ce1590456",
-        "ui-design-to-image": "06504224ccacfea8a84233b7d237f1c822d8c897301a64c9054a408e6bfaab4d",
-        "ui-design-use": "ea81dc82570ca1996e0621ebd204fb6a30fc6da6d5e8840ae27683b7a429919a",
-        "ui-design-visual": "e234e1ea523870dddf077760b8468c98a9dadc137c3c75a6594860e318896fa7"
+        "ui-design-continuity": "52294370cbc38343c61239524dfcf6a2abff4eaacffb8ec3c9ab5c5f829c8e72",
+        "ui-design-feature": "2d6016132a2358432b67379583b771032e1fb4a2aaa61f2b6208f648a6761da1",
+        "ui-design-harness": "65869e947ac30395e00bae327dcf9a4e2db3dc46cdc7477da4fafee67d8d328a",
+        "ui-design-nav": "b3e73bb3b05283e55f7ce469cd17394a5e98282c1a60d32c45f6cf6ca657fdee",
+        "ui-design-preview": "aa717cd720186ca5de13d9b0c696232b3c67be390ec950d55fb0aa4b43e791e6",
+        "ui-design-review": "f92c25f0ad09cd0d13257b10a13204a291522d035da0f4b93500bcdfb82cd9fc",
+        "ui-design-spec": "a2c7249e1a439f8ff6c8bdcd9a9ef3d72004cb5f60229a5161589bf5f974beac",
+        "ui-design-theme": "153be2e21cdc0f444a66870e11ed2bac8c62dc00d9c4d4d584858ae616398edc",
+        "ui-design-to-image": "4ff6f0ae8c1d8355bdd293b29c828fb48218586d9871e6d7299dda828b129faa",
+        "ui-design-use": "f3265fa555c37d21d6dc93f007294189db6cf971b2d106b4053f2a62dca92d28",
+        "ui-design-visual": "10eddd04c9a4987580f734eb487cbdda96d0c6a3438ce8ade81a4bf9515b9083"
       }
     }
   ]
