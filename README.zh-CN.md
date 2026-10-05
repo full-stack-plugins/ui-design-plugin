@@ -9,9 +9,15 @@
 | 全栈开发 | [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) | 架构与 UI 设计、代码理解、质量检查、代码审查、流程治理与服务器运维 |
 | AIGC 内容创作 | [Full AIGC Plugins](https://github.com/partme-ai/full-aigc-plugins) | 图像、视频、音频、音乐、3D 与多模态内容创作 |
 
-基于宿主大模型的前端设计插件，覆盖规格、功能与导航合同、界面连续性、可编辑原型、可选生图、预览和审查。英文显示名称统一为 **UI Design**。`ui-design` 0.1.1 源码仓库：[ui-design-plugin](https://github.com/full-stack-plugins/ui-design-plugin)。固定版本 v0.1.1 通过 Full Stack 插件市场分发，客户端安装验收另行进行，本插件由社区维护。
+基于宿主大模型的前端设计插件，覆盖规格、功能与导航合同、界面连续性、可编辑原型、可选生图、预览和审查。英文显示名称统一为 **UI Design**。`ui-design` 0.1.2 源码仓库：[ui-design-plugin](https://github.com/full-stack-plugins/ui-design-plugin)。固定版本 v0.1.2 通过 Full Stack 插件市场分发，客户端安装验收另行进行，本插件由社区维护。
 
 [English](README.md) | 简体中文 · [设计方案](docs/ui-design-plugin-design.md) · [验收合同](docs/implementation-spec.md)
+
+## 正确调用 UI Design
+
+插件 ID 为 `ui-design`，实际入口技能名称为 **`ui-design-use`**。请求使用“UI Design 插件”时，应从宿主技能列表解析并调用 `ui-design-use`；不要将 `ui-design` 传入 Skill 工具，否则会报 `Skill not found: ui-design`。如果宿主要求带命名空间，使用其技能列表中实际提供的完整名称。
+
+示例：调用 `ui-design-use`，为 ddd4j-ui-pro 产出登录到功能路径、菜单树与可见条件、壳层布局、组件与设计系统、31 页按钮与交互清单，以及 P02 角色管理样例；输出到项目指定的 `docs/functional-design/`。
 
 ## 架构与技能
 
@@ -27,7 +33,7 @@ flowchart LR
     E --> H[持续任务复用既有 Harness]
 ```
 
-分发 **11 个技能**，包括入口 ui-design-use，全部在 [design-skills](https://github.com/full-stack-skills/design-skills/tree/v1.15.1) 维护。来源 v1.15.1 固定于 13d8e347002d4be3bb6a5b6415df64fc0a4d52db，完整技能摘要记录在 skills.lock.json；插件不维护技能例外。
+分发 **11 个技能**，包括入口 ui-design-use，全部在 [design-skills](https://github.com/full-stack-skills/design-skills/tree/v1.15.3) 维护。来源 v1.15.3 固定于 5183e6b6ee92bc8f0f6bdbe594bd63d6c550d9a5，完整技能摘要记录在 skills.lock.json；插件不维护技能例外。
 
 普通设计不需要 MCP 或外部设计平台。需要图片且原生 imagegen 可用时，默认使用宿主能力；baoyu-image-gen 是用户明确选择后才使用的可选已安装后端，不分发其实现或 Codex 系统技能。插件加载不会生成图片、设置凭据、安装依赖或运行提示 hooks。
 
@@ -72,7 +78,7 @@ python scripts/package_plugin.py
 
 ## 安装与技能源维护
 
-通过客户端市场界面添加 `partme-ai/full-stack-plugins`，再选择 **UI Design**；安装来源固定为 `v0.1.1`。普通设计无需 MCP 连接。
+通过客户端市场界面添加 `partme-ai/full-stack-plugins`，再选择 **UI Design**；安装来源固定为 `v0.1.2`。普通设计无需 MCP 连接。
 
 技能内容只在 `design-skills` 修改。先发布技能源版本，再更新固定来源并执行：
 

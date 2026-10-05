@@ -4,7 +4,7 @@
     {
       "package": "design-skills",
       "repo": "https://github.com/full-stack-skills/design-skills.git",
-      "ref": "v1.15.1",
+      "ref": "v1.15.3",
       "skills": [
         "ui-design-continuity",
         "ui-design-feature",
@@ -19,7 +19,7 @@
         "ui-design-visual"
       ],
       "dest": "skills/",
-      "sha": "13d8e347002d4be3bb6a5b6415df64fc0a4d52db",
+      "sha": "5183e6b6ee92bc8f0f6bdbe594bd63d6c550d9a5",
       "sha256": {
         "ui-design-continuity": "52294370cbc38343c61239524dfcf6a2abff4eaacffb8ec3c9ab5c5f829c8e72",
         "ui-design-feature": "2d6016132a2358432b67379583b771032e1fb4a2aaa61f2b6208f648a6761da1",
@@ -30,7 +30,7 @@
         "ui-design-spec": "a2c7249e1a439f8ff6c8bdcd9a9ef3d72004cb5f60229a5161589bf5f974beac",
         "ui-design-theme": "153be2e21cdc0f444a66870e11ed2bac8c62dc00d9c4d4d584858ae616398edc",
         "ui-design-to-image": "4ff6f0ae8c1d8355bdd293b29c828fb48218586d9871e6d7299dda828b129faa",
-        "ui-design-use": "f3265fa555c37d21d6dc93f007294189db6cf971b2d106b4053f2a62dca92d28",
+        "ui-design-use": "2b0237da082e0415ca349432b5547d4da677aded492d9970e2409a461538c11a",
         "ui-design-visual": "10eddd04c9a4987580f734eb487cbdda96d0c6a3438ce8ade81a4bf9515b9083"
       }
     }

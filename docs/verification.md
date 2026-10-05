@@ -1,5 +1,11 @@
 # Local verification record
 
+## v0.1.2 entry-description correction (2026-10-06)
+
+The callable entry remains `ui-design-use`; `ui-design` remains the plugin ID. Updated skill frontmatter, host skill metadata, plugin descriptions/default prompts and bilingual invocation examples all identify that distinction. The skills snapshot comes from published design-skills v1.15.3 / 5183e6b6ee92bc8f0f6bdbe594bd63d6c550d9a5. No installed cache was edited and no alias skill was introduced.
+
+Validation: source skill lint/distribution checks (18 skills), strict YAML parsing of the entry frontmatter/host metadata, plugin static/link/snapshot checks, 8 plugin regressions and 128 Harness regressions passed. These are packaging and regression evidence; the original user's design artifacts and live installed-client invocation were not executed in this maintenance task.
+
 Scope: local implementation verification, not installed-client acceptance. Source identity is the exact skills.lock.json snapshot at upstream commit 13d8e347002d4be3bb6a5b6415df64fc0a4d52db; source tag v1.15.1 is published.
 
 | Check | Actual result | What it establishes |

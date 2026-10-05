@@ -1,7 +1,7 @@
 {
   "name": "ui-design",
-  "version": "0.1.1",
-  "description": "Design frontend specifications, editable prototypes, scoped image assets and evidence-backed previews using model-native capabilities.",
+  "version": "0.1.2",
+  "description": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
@@ -15,8 +15,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "UI Design",
-    "shortDescription": "Model-native frontend design and image assets",
-    "longDescription": "Design frontend specifications, editable prototypes, scoped image assets and evidence-backed previews using model-native capabilities.",
+    "shortDescription": "Frontend design via the ui-design-use entry skill",
+    "longDescription": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
     "developerName": "Full Stack Skills / PartMe.AI",
     "category": "Creativity",
     "capabilities": [
@@ -25,8 +25,8 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Design a responsive frontend with an existing theme",
-      "Continue the next page using my approved baseline"
+      "Use ui-design-use to produce the requested complete frontend functional design package, preserving existing page IDs and the requested output directory.",
+      "Use ui-design-use to continue the next frontend page using the approved baseline."
     ],
     "logo": "./assets/logo.png",
     "logoDark": "./assets/logo.png"

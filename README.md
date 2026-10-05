@@ -9,9 +9,15 @@ This plugin belongs to **Full-stack development**.
 | Full-stack development | [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) | Architecture and UI design, code understanding, quality checks, code review, workflow governance, and server operations |
 | AIGC content creation | [Full AIGC Plugins](https://github.com/partme-ai/full-aigc-plugins) | Image, video, audio, music, 3D, and multimodal content creation |
 
-Model-native frontend design: specifications, feature/navigation contracts, continuity, editable prototypes, optional image assets, preview and review. English display name: **UI Design**. Package `ui-design` 0.1.1 source repository: [ui-design-plugin](https://github.com/full-stack-plugins/ui-design-plugin). Release v0.1.1 is published through Full Stack Plugins; installed-client acceptance is separate; this is a community-maintained integration.
+Model-native frontend design: specifications, feature/navigation contracts, continuity, editable prototypes, optional image assets, preview and review. English display name: **UI Design**. Package `ui-design` 0.1.2 source repository: [ui-design-plugin](https://github.com/full-stack-plugins/ui-design-plugin). Release v0.1.2 is published through Full Stack Plugins; installed-client acceptance is separate; this is a community-maintained integration.
 
 English | [简体中文](README.zh-CN.md) · [Design](docs/ui-design-plugin-design.md) · [Acceptance contract](docs/implementation-spec.md)
+
+## Invoking UI Design
+
+The plugin ID is `ui-design`; its callable entry skill is **`ui-design-use`**. When asked to use the UI Design plugin, resolve and invoke `ui-design-use` from the host skill inventory. Passing `ui-design` to a Skill tool causes `Skill not found: ui-design`. If the host requires a namespace, use the exact qualified name exposed by its inventory.
+
+Example: invoke `ui-design-use` to produce the login-to-feature paths, menu tree and visibility rules, shell layout, components and design system, actions and interactions for all 31 pages, and the P02 role-management sample for ddd4j-ui-pro; write to the project-requested `docs/functional-design/` directory.
 
 ## Architecture and skills
 
@@ -27,7 +33,7 @@ flowchart LR
     E --> H[Existing Harness for resumable work]
 ```
 
-The package distributes **11 skills**, all maintained in [design-skills](https://github.com/full-stack-skills/design-skills/tree/v1.15.1). Source v1.15.1 resolves to 13d8e347002d4be3bb6a5b6415df64fc0a4d52db; skills.lock.json records each complete skill digest. No plugin-local skills are maintained.
+The package distributes **11 skills**, all maintained in [design-skills](https://github.com/full-stack-skills/design-skills/tree/v1.15.3). Source v1.15.3 resolves to 5183e6b6ee92bc8f0f6bdbe594bd63d6c550d9a5; skills.lock.json records each complete skill digest. No plugin-local skills are maintained.
 
 Ordinary design requires no MCP or external design platform. Native imagegen is used when available and requested. baoyu-image-gen remains an explicitly selected optional installed backend; its implementation and the Codex system skill are not redistributed. Loading the plugin does not generate images, set credentials, install dependencies or run hooks.
 
@@ -72,7 +78,7 @@ Update source skills first and refresh their explicit snapshot hashes. Source re
 
 ## Installation and skill ownership
 
-Add `partme-ai/full-stack-plugins` using your client marketplace interface, then select **UI Design**. The install source is pinned to `v0.1.1`. Ordinary design needs no MCP connection.
+Add `partme-ai/full-stack-plugins` using your client marketplace interface, then select **UI Design**. The install source is pinned to `v0.1.2`. Ordinary design needs no MCP connection.
 
 Skills are maintained only in `design-skills`. After publishing a source version, update the pinned release and run:
 
