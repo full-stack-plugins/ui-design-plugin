@@ -1,5 +1,14 @@
 # UI Design
 
+## Plugin marketplaces
+
+This plugin belongs to **Full-stack development**.
+
+| Category | Marketplace | Purpose |
+| --- | --- | --- |
+| Full-stack development | [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) | Architecture and UI design, code understanding, quality checks, code review, workflow governance, and server operations |
+| AIGC content creation | [Full AIGC Plugins](https://github.com/partme-ai/full-aigc-plugins) | Image, video, audio, music, 3D, and multimodal content creation |
+
 Model-native frontend design: specifications, feature/navigation contracts, continuity, editable prototypes, optional image assets, preview and review. English display name: **UI Design**. Package `ui-design` 0.1.1 source repository: [ui-design-plugin](https://github.com/full-stack-plugins/ui-design-plugin). Release v0.1.1 is published through Full Stack Plugins; installed-client acceptance is separate; this is a community-maintained integration.
 
 English | [简体中文](README.zh-CN.md) · [Design](docs/ui-design-plugin-design.md) · [Acceptance contract](docs/implementation-spec.md)
