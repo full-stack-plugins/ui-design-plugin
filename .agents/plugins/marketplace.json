@@ -22,7 +22,7 @@
       "interface": {
         "displayName": "UI Design",
         "shortDescription": "Frontend design via the ui-design-use entry skill",
-        "logo": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.1.2/assets/logo.png"
+        "logo": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.2.0/assets/logo.png"
       }
     }
   ]
