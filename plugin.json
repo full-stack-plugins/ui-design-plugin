@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ui-design",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"

@@ -9,16 +9,16 @@
       "source": {
         "source": "url",
         "url": "https://github.com/full-stack-plugins/ui-design-plugin.git",
-        "ref": "v0.1.2"
+        "ref": "v0.2.0"
       },
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
       },
       "category": "Creativity",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "description": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
-      "icon": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.1.2/assets/logo.png",
+      "icon": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.2.0/assets/logo.png",
       "interface": {
         "displayName": "UI Design",
         "shortDescription": "Frontend design via the ui-design-use entry skill",
