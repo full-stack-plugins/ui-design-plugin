@@ -1,5 +1,5 @@
 {
-  "name": "@partme-dsh/ui-design",
+  "name": "ui-design",
   "version": "0.2.0",
   "description": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
   "type": "module",
@@ -30,5 +30,6 @@
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
-  }
+  },
+  "private": true
 }
