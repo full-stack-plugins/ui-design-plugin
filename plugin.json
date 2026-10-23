@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ui-design",
   "version": "0.2.0",
-  "description": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
+  "description": "Complete frontend design packages from login to feature pages: navigation, page contracts, themes, previews and visual review.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
@@ -16,8 +16,8 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "UI Design",
-        "shortDescription": "Frontend design via the ui-design-use entry skill",
+        "displayName": "Frontend UI Design · UI Design",
+        "shortDescription": "Feature contracts, pages, themes, previews and visual review",
         "longDescription": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
         "developerName": "Full Stack Skills / PartMe.AI",
         "category": "Creativity",
@@ -31,7 +31,9 @@
           "Use ui-design-use to continue the next frontend page using the approved baseline."
         ],
         "logo": "./assets/logo.png",
-        "logoDark": "./assets/logo.png"
+        "logoDark": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png",
+        "composerIconDark": "./assets/logo.png"
       }
     }
   }

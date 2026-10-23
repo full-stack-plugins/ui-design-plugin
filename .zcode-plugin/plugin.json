@@ -1,8 +1,8 @@
 {
   "name": "ui-design",
   "version": "0.2.0",
-  "displayName": "UI Design",
-  "description": "Use the ui-design-use entry skill for complete frontend design packages, editable prototypes, image assets and verified previews. ui-design is the plugin ID, not a skill name.",
+  "displayName": "Frontend UI Design · UI Design",
+  "description": "Complete frontend design packages from login to feature pages: navigation, page contracts, themes, previews and visual review.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
@@ -15,5 +15,8 @@
     "imagegen",
     "agent-skills"
   ],
-  "skills": "skills"
+  "skills": "skills",
+  "displayName_i18n": {
+    "en": "Frontend UI Design · UI Design"
+  }
 }
