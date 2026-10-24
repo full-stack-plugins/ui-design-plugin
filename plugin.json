@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ui-design",
   "version": "0.2.0",
-  "description": "Complete frontend design packages from login to feature pages: navigation, page contracts, themes, previews and visual review.",
+  "description": "从登录到功能页的完整设计包：导航、页面契约、主题、可运行预览与视觉评审。",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
@@ -36,5 +36,12 @@
         "composerIconDark": "./assets/logo.png"
       }
     }
+  },
+  "displayName": "UI（前端界面设计）",
+  "displayName_i18n": {
+    "zh-CN": "UI（前端界面设计）"
+  },
+  "description_i18n": {
+    "zh-CN": "从登录到功能页的完整设计包：导航、页面契约、主题、可运行预览与视觉评审。"
   }
 }

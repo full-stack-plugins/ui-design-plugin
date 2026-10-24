@@ -1,8 +1,8 @@
 {
   "name": "ui-design",
   "version": "0.2.0",
-  "displayName": "UI Design · Frontend UI Design",
-  "description": "Complete frontend design packages from login to feature pages: navigation, page contracts, themes, previews and visual review.",
+  "displayName": "UI（前端界面设计）",
+  "description": "从登录到功能页的完整设计包：导航、页面契约、主题、可运行预览与视觉评审。",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
   },
@@ -17,6 +17,10 @@
   ],
   "skills": "skills",
   "displayName_i18n": {
-    "en": "UI Design · Frontend UI Design"
+    "en": "UI Design · Frontend UI Design",
+    "zh-CN": "UI（前端界面设计）"
+  },
+  "description_i18n": {
+    "zh-CN": "从登录到功能页的完整设计包：导航、页面契约、主题、可运行预览与视觉评审。"
   }
 }

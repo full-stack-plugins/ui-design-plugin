@@ -17,18 +17,19 @@
       },
       "category": "Creativity",
       "version": "0.2.0",
-      "description": "Complete frontend design packages from login to feature pages: navigation, page contracts, themes, previews and visual review.",
+      "description": "从登录到功能页的完整设计包：导航、页面契约、主题、可运行预览与视觉评审。",
       "icon": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.2.0/assets/logo.png",
       "interface": {
-        "displayName": "UI Design · Frontend UI Design",
-        "shortDescription": "Feature contracts, pages, themes, previews and visual review",
+        "displayName": "UI（前端界面设计）",
+        "shortDescription": "功能契约、页面、主题、预览与视觉评审",
         "logo": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.2.0/assets/logo.png"
       },
       "line": "full-stack",
       "componentTypes": [
         "skills",
         "mcp"
-      ]
+      ],
+      "displayName": "UI（前端界面设计）"
     }
   ]
 }
