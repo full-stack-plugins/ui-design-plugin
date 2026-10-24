@@ -1,7 +1,7 @@
 {
   "name": "partme-ai-ui-design",
   "interface": {
-    "displayName": "Frontend UI Design · UI Design"
+    "displayName": "UI Design · Frontend UI Design"
   },
   "plugins": [
     {
@@ -20,7 +20,7 @@
       "description": "Complete frontend design packages from login to feature pages: navigation, page contracts, themes, previews and visual review.",
       "icon": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.2.0/assets/logo.png",
       "interface": {
-        "displayName": "Frontend UI Design · UI Design",
+        "displayName": "UI Design · Frontend UI Design",
         "shortDescription": "Feature contracts, pages, themes, previews and visual review",
         "logo": "https://cdn.jsdelivr.net/gh/full-stack-plugins/ui-design-plugin@v0.2.0/assets/logo.png"
       }

@@ -1,7 +1,7 @@
 {
   "name": "ui-design",
   "version": "0.2.0",
-  "displayName": "Frontend UI Design · UI Design",
+  "displayName": "UI Design · Frontend UI Design",
   "description": "Complete frontend design packages from login to feature pages: navigation, page contracts, themes, previews and visual review.",
   "author": {
     "name": "Full Stack Skills / PartMe.AI"
@@ -17,6 +17,6 @@
   ],
   "skills": "skills",
   "displayName_i18n": {
-    "en": "Frontend UI Design · UI Design"
+    "en": "UI Design · Frontend UI Design"
   }
 }
