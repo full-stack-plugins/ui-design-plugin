@@ -35,6 +35,15 @@
         "composerIcon": "./assets/logo.png",
         "composerIconDark": "./assets/logo.png"
       }
+    },
+    "ai.partme": {
+      "displayName": "UI（前端界面设计）",
+      "displayName_i18n": {
+        "zh-CN": "UI（前端界面设计）"
+      },
+      "description_i18n": {
+        "zh-CN": "从登录到功能页的完整设计包：导航、页面契约、主题、可运行预览与视觉评审。"
+      }
     }
   }
 }
